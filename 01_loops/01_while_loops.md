@@ -20,9 +20,9 @@ while (i < 5) {
 }
 ```
 
-Don't run your code! As you can see, our condition will resolve to true, and as we told dart, `while` this is `true`, `print` the value of `i`.
+Don't run your code! As you can see, our condition will resolve to true, and as we told Dart, `while` this is `true`, `print` the value of `i`.
 
-Once you run your code, dart will print `i` non stop, and may crash your IDE or even your computer. That's called an `infinite loop`, because it runs forever!
+Once you run your code, Dart will print `i` non stop, and may crash your IDE or even your computer. That's called an `infinite loop`, because it runs forever!
 
 Always, before you write your loop, think about how it's going to end. Let's fix our loop:
 
@@ -35,18 +35,18 @@ while (i < 5) {
 }
 ```
 
-Here, we told dart to increment the value of `i` by one with each iteration.
+Here, we told Dart to increment the value of `i` by one with each iteration.
 
 What is an iteration?
-Let's get again into the brain of dart and see how it thinks and evaluates our code:
+Let's get again into the brain of Dart and see how it thinks and evaluates our code:
 
-We have an integer called `i` with the value of `1`. `while` 1 is less than `5`, dart will execute the print statement for the value of `i` and then increment it by `1` till it reaches the value 2, then the iteration will stop.
+We have an integer called `i` with the value of `1`. `while` 1 is less than `5`, Dart will execute the print statement for the value of `i` and then increment it by `1` till it reaches the value 2, then the iteration will stop.
 
 The condition will be checked again to see if it should keep going or stop and exit the loop.
 
 The second iteration starts: Is `2` less than `5`? If so, `print` `i` and go for another iteration...
 
-Last iteration: `i` is now equal to `5`, and it's not less than `5`, so the result will evaluate to `false`, and dart will stop and exit the loop.
+Last iteration: `i` is now equal to `5`, and it's not less than `5`, so the result will evaluate to `false`, and Dart will stop and exit the loop.
 
 Output:
 
