@@ -1,6 +1,6 @@
-We can use a loop to execute a block of code multiple times, and our first type of loops is a `while` loop.
+We can use a loop to execute a block of code multiple times. There are many types of loops. We're gonna get into the first type, which is a `while` loop:
 
-The syntax of a while loop looks like this:
+The syntax of a `while` loop looks like the following:
 
 ```dart
 void main() {
@@ -10,7 +10,7 @@ void main() {
 }
 ```
 
-Looks similar to an if statement, let's write our first loop:
+It looks similar to an `if statement`. Let's write our first loop:
 
 ```dart
 var i = 1;
@@ -20,11 +20,11 @@ while (i < 5) {
 }
 ```
 
-Don't run your code!, as you see, our condition will resolve to true, and as we told dart, `while` this is `true` `print` the value of `i`.
+Don't run your code! As you can see, our condition will resolve to true, and as we told dart, `while` this is `true`, `print` the value of `i`.
 
-So once you run your code, dart will print `i` non stop, and may crash your ide or even your computer, and that's whats called an `infinite loop`, because it runs forever!
+Once you run your code, dart will print `i` non stop, and may crash your IDE or even your computer. That's called an `infinite loop`, because it runs forever!
 
-Always before you right your loop, think about how it's gonna end, so let's fix our loop:
+Always, before you write your loop, think about how it's going to end. Let's fix our loop:
 
 ```dart
 var i = 1;
@@ -35,21 +35,18 @@ while (i < 5) {
 }
 ```
 
-So here we told dart to increament the value of `i` by one with each iteration, what is an iteration?
+Here, we told dart to increment the value of `i` by one with each iteration.
 
-let's get again into the brain of dart and see how it thinks and evaluates our code:
+What is an iteration?
+Let's get again into the brain of dart and see how it thinks and evaluates our code:
 
-We have an integer called `i` with the value of `1`, `while` 1 is less than `5`, and that's `true`, excute a print statement for the value of `i` and then increament it by `1`.
+We have an integer called `i` with the value of `1`. `while` 1 is less than `5`, dart will execute the print statement for the value of `i` and then increment it by `1` till it reaches the value 2, then the iteration will stop.
 
-So `i` is now equal to `2`, and we finished an `iteration`.
+The condition will be checked again to see if it should keep going or stop and exit the loop.
 
-The condition will be checked again to see if It should keep going or It should stop and exit the loop.
+The second iteration starts: Is `2` less than `5`? If so, `print` `i` and go for another iteration...
 
-The second iteration starts: Is `2` less than `5`? that's `true` so `print` `i` and go for another iteration...
-
-[later]
-
-Last iteration: `i` is now equal to `5`, is `5` less than `5`? `false`, so dart will stop and exit the loop.
+Last iteration: `i` is now equal to `5`, and it's not less than `5`, so the result will evaluate to `false`, and dart will stop and exit the loop.
 
 Output:
 
@@ -65,7 +62,7 @@ Let's make this more interesting:
 ```dart
 var i = 1;
 
-while (i =< 5) {
+while (i <= 5) {
     print("x" * i);
     i++;
 }
